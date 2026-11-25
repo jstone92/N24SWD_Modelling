@@ -6,7 +6,7 @@ This MATLAB package supports analyses of **interactions between measured light e
 
 **Associated publication:**
 
-Stone, J. E., McGlashan, E. M., Downie, L. E., Wu, C. Y., Cichello, E., Ayton, L., Yap, R., Zhong, Y., Landry, S. A., Mansfield, D. R., Bei, B., Rajaratnam, S. M. W., & Phillips, A. J. K. (2026). Assessing physiological underpinnings of sighted non-24-hour sleep-wake phase disorder. *Journal of Biological Rhythms*.
+Stone, J. E., McGlashan, E. M., Downie, L. E., Wu, C. Y., Cichello, E., Ayton, L., Yap, R., Zhong, Y., Landry, S. A., Mansfield, D. R., Bei, B., Rajaratnam, S. M. W., & Phillips, A. J. K. (under review). Assessing physiological underpinnings of sighted non-24-hour sleep-wake phase disorder. *Journal of Biological Rhythms*.
 
 **Circadian pacemaker model:**
 
@@ -30,11 +30,8 @@ Alternatively, define `cfg` in your script and call `run_n24_case(cfg)`.
 
 ### Synthetic test data
 
-Folder `examples/synthetic_test_data/` contains fake monitoring data (~25 h sleep cycle, small nightly jitter; aMT6s acrophase at **day 0, 12, and 24**). Regenerate with `generate_synthetic_example_data.m` (or `.py` if Python is available).
+Folder `examples/synthetic_test_data/` contains fake monitoring data (~25 h sleep cycle, small nightly jitter; aMT6s acrophase at **day 0, 12, and 24**). 
 
-Folder `examples/synthetic_irregular_test_data/` adds **irregular sleep-onset spacing** (mostly ~25 h with intermittent ~24 h “phase-hold” nights and occasional long gaps); run `generate_synthetic_irregular_data` and `N24_CaseConfig_synthetic_irregular.m` — see that folder’s `README.txt`.
-
-Then (regular synthetic):
 
 ```matlab
 setup_n24_toolbox;
